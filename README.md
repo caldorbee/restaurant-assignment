@@ -1,4 +1,7 @@
 # restaurant-assignment
+
+Elena was here !!
+Elena was here again!!
 # Group Project
 
 The point of this to have fun and to work together with your team. Below is a "writeup" from a client about what they are looking for. Even though "they" get pretty specific, you still have a lot of liberty with this so long as you get all of the required pieces in place.
