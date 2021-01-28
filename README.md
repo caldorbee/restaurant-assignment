@@ -63,7 +63,7 @@ Each of our food items has special notes on it and if a note matches then the ic
 
 ## Resources
 
-- [Mockups](http://pc-restaurant.surge.sh/)
+- [Mockups](http://pc-restauragitnt.surge.sh/)
 - [Custom Restaurant API](https://obscure-tundra-54269.herokuapp.com/)
 - [The Noun Project](http://thenounproject.com/)
 - [Icon Fonts] (https://fontawesome.com/icons?d=gallery)
