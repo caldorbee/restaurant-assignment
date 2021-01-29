@@ -21,11 +21,11 @@
 }
 
 #card1,#card2,#card3{
-    border:2px solid #ADACAD;
+    border:2px solid #e6e0e0;
     width:33%;
     margin-right: 8px;
     padding:0 18px 0 18px;
-    background-color:#E3E3E3 ;
+    background-color:#F7F7F7 ;
 }
 .cardtitle{
    
