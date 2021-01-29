@@ -21,10 +21,11 @@
 }
 
 #card1,#card2,#card3{
-    border:3px solid grey;
+    border:2px solid #ADACAD;
     width:33%;
     margin-right: 8px;
     padding:0 18px 0 18px;
+    background-color:#E3E3E3 ;
 }
 .cardtitle{
    
@@ -41,7 +42,7 @@
     font-size: 15px;
     padding-top: 10px;
     padding-bottom: 6px;
-    border-bottom: 3px solid rgb(122, 118, 118);
+    border-bottom: 3px solid #ADACAD;
     width: 100%;
     margin: 0 auto;
     margin-bottom: 15px;
@@ -53,10 +54,16 @@
     height: 100px;
     margin:0 auto;
     margin-top:10px;
+    
 
 }
 
 .footerp{
     font-size: 15px;
     padding-top:10px;
+}
+
+.address{
+    padding-top:8px;
+    line-height: 25px;
 }

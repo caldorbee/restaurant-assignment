@@ -45,9 +45,14 @@
         </div>
         <div id="card3">
             <header class="cardheader">Our Location</header>
-            <img src="#" alt="">
-            <p class="address">20298 Coastal Highway
-                Rehoboth Beach, Delaware, 19971</p>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.312350449999!2d-75.10103518465516!3d38.71063717959993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b8b637adf69b7b%3A0xc99371e1d40cb5cd!2s20298%20Coastal%20Hwy%2C%20Rehoboth%20Beach%2C%20DE%2019971!5e0!3m2!1sen!2sus!4v1611948554650!5m2!1sen!2sus" width="100%" height="150px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <p class="address" style="text-align:center">
+                20298 Coastal Highway </br>
+                Rehoboth Beach, Delaware, 19971 </br>
+                302-277-FISH . 302-277-FISH . Map . Directions
+            </p>
+            
+
         </div>
             
     </div>
@@ -84,6 +89,16 @@
 
 
     <script src="main.js"></script>
-    <script src ="tab-menu.js"></script
+    <script src ="tab-menu.js"></script>
+    <!-- <script>
+    function myMap() {
+    var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+    </script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 </body>
 </html>
