@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="cardlist.css">
     <link rel="stylesheet" href="photos.css">
+    <link rel="stylesheet" href="tab-menu.css">
     <link rel="stylesheet" href="our-story.css">
     <title>Restaurant</title>
 </head>
@@ -57,12 +58,12 @@
         </div>
             
     </div>
-    <div tabContainer>
+    <div class="tabContainer">
         <div id ="tab-button">
-            <button data-target="buttonCon-sty" id = "story" class="story">Story</button>
+            <button data-target="buttonCon-sty" id = "story" class="story">Our Story</button>
             <button data-target="buttonCon-men" id ="menu" class="menu">Menu</button>
             <button data-target="buttonCon-res" id ="reservation" class="reservations">Reservation</button>
-        </div>
+        </div>       
         <div id ="buttonCon-sty" class="button-con">
             <div id="ourstory">
                 <p>Our Story began in the year 1887. During that time, four families joined together (the Marrissa's, the Calvin's the Elena's and the Candice’s) and created what we know today as Big Fish Grill. The Marissa's harvested crabs and had many uses for them including creating tools and weapons from their hard shells. It wasn't until 1885 when their land was suffering from famine, that they began consuming crabs for survival. They quickly became master chefs of crab and later renamed their tribe the Crabalonians. The Marissa's traveled from land to land sharing their wisdom of crabs until they settled on an island called Calvinite that inhabited the Calvin's. They were already well known chef’s (a passed down tradition through many generations). Their expertise in the many ways of cooking fish was unheard of during that time. The Marissa's and the Calvin's were in competition for many years until they decided to break tradition and merge. They harvested so much seafood that it was becoming scarce; so they packed up and sailed the seas delivering their services all over the world. That is when they met the Elena's and the Candice’s, who were originally working separately but also united their families.</p><br>    
@@ -72,12 +73,23 @@
             </div>
         </div>
         <div id ="buttonCon-men" class ='button-con' hidden>
-            menu
+            <div id="menu-select">
+                <button data-target="menuCon-appetizer" id ="menu-appet">Appetizer</button>
+                <button data-target="menuCon-lunch" id = "lunch">Lunch</button>
+                <button data-target="menuCon-dinner" id ="dinner">Dinner</button>
+                <button data-target="menuCon-dessert" id ="men-dessert">Dessert</button>
+            </div>
+
+            <div id ="menuCon-appetizer" class="menu-Con">APPETIZER</div>
+            <div id ="menuCon-lunch" class="menu-Con" hidden>LUNCH</div>
+            <div id ="menuCon-dinner" class="menu-Con" hidden>DINNER</div>
+            <div id ="menuCon-dessert" class="menu-Con" hidden>DESSERT</div>
+  
+
         </div>
         <div id ="buttonCon-res" class="button-con" hidden>
             reservation
         </div>
-
     </div>
     
 
