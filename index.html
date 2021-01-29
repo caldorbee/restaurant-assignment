@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="cardlist.css">
     <link rel="stylesheet" href="photos.css">
+    <link rel="stylesheet" href="tab-menu.css">
     <title>Restaurant</title>
 </head>
 <body>
@@ -45,22 +46,32 @@
         </div>
             <p></p>
     </div>
-    <div tabContainer>
+    <div class="tabContainer">
         <div id ="tab-button">
-            <button data-target="buttonCon-sty" id = "story" class="story">Story</button>
+            <button data-target="buttonCon-sty" id = "story" class="story">Our Story</button>
             <button data-target="buttonCon-men" id ="menu" class="menu">Menu</button>
             <button data-target="buttonCon-res" id ="reservation" class="reservations">Reservation</button>
         </div>
-        <div id ="buttonCon-sty" class="button-con">
-            Story
-        </div>
+        <div id ="buttonCon-sty" class="button-con">Story</div>
+       
         <div id ="buttonCon-men" class ='button-con' hidden>
-            menu
+            <div id="menu-select">
+                <button data-target="menuCon-appetizer" id ="menu-appet">Appetizer</button>
+                <button data-target="menuCon-lunch" id = "lunch">Lunch</button>
+                <button data-target="menuCon-dinner" id ="dinner">Dinner</button>
+                <button data-target="menuCon-dessert" id ="men-dessert">Dessert</button>
+            </div>
+
+            <div id ="menuCon-appetizer" class="menu-Con">APPETIZER</div>
+            <div id ="menuCon-lunch" class="menu-Con" hidden>LUNCH</div>
+            <div id ="menuCon-dinner" class="menu-Con" hidden>DINNER</div>
+            <div id ="menuCon-dessert" class="menu-Con" hidden>DESSERT</div>
+  
+
         </div>
         <div id ="buttonCon-res" class="button-con" hidden>
             reservation
         </div>
-
     </div>
     
 
