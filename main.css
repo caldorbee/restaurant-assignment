@@ -1,10 +1,15 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .navContainer {
-    display: flex;
+  display: flex;
+}
 
+#ourstory {
+  box-sizing: border-box;
+  width: 950px;
+  margin-left: 70px;
 }
