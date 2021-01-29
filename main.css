@@ -1,22 +1,23 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .navContainer {
-    margin: 1% 10%;
-    padding: 1%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 150px;
-    width: 80%;
-    border-bottom: 2px solid grey;
+  display: flex;
+  margin: 1% 10%;
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 150px;
+  width: 80%;
+  border-bottom: 2px solid grey;
 }
 
 .navContainer img {
-    Height: 120px;
+  height: 120px;
 }
 
 .phone {
@@ -29,29 +30,29 @@
 }
 
 .social-media {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 60px;
-    width: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  width: 120px;
 }
 
-.social-media a{
-    color: white;
-    height: 30px;
-    width: 30px;
-    border: none;
-    border-radius: 50%;
+.social-media a {
+  color: white;
+  height: 30px;
+  width: 30px;
+  border: none;
+  border-radius: 50%;
 }
 
 #twitter:hover {
-    background-color:steelblue;
+  background-color: steelblue;
 }
 
 #fb:hover {
-    background-color:dodgerblue;
+  background-color: dodgerblue;
 }
 
 #insta:hover {
-    background-color:coral;
+  background-color: coral;
 }
