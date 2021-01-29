@@ -7,8 +7,20 @@
 
 .tabContainer{
     margin: 1% 10%;
-    width: 56%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50em 20em;
+    gap: 25px;
 }
+#tab-men {
+    grid-column-start: 1;
+    width:100%;
+
+}
+#photocCon {
+    grid-column-start: 2;
+}
+
 #tab-button button:hover{
     cursor: pointer;
 }
@@ -24,7 +36,7 @@
     border : none;
     outline: none; 
     background:none; 
-    font-size:  20px;git
+    font-size:  20px;
     padding: 10px;
     border-bottom: 0px;
 
@@ -116,3 +128,5 @@
 
     
 }
+
+
