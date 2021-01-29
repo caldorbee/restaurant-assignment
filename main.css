@@ -5,6 +5,53 @@
 }
 
 .navContainer {
+    margin: 1% 10%;
+    padding: 1%;
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 150px;
+    width: 80%;
+    border-bottom: 2px solid grey;
+}
 
+.navContainer img {
+    Height: 120px;
+}
+
+.phone {
+    padding-top: 9%;
+    padding-right: 70%;
+    color:royalblue;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: ;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    width: 120px;
+}
+
+.social-media a{
+    color: white;
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 50%;
+}
+
+#twitter:hover {
+    background-color:steelblue;
+}
+
+#fb:hover {
+    background-color:dodgerblue;
+}
+
+#insta:hover {
+    background-color:coral;
 }
