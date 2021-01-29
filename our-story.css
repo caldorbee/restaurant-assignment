@@ -1,8 +1,8 @@
 #ourstory {
   box-sizing: border-box;
-  width: 56%;
+  width: 100%;
   margin-top: 60px;
-  margin-left: 145px;
+  /* margin-left: 145px; */
   color: gray;
   line-height: 20px;
   font-family: Arial, Helvetica, sans-serif;
