@@ -55,3 +55,13 @@
 #insta:hover {
     background-color:coral;
 }
+
+.tabContainer {
+    margin: 1% 10%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 150px;
+    width: 80%;
+}
