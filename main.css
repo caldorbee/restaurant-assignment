@@ -54,20 +54,23 @@
 }
 
 #insta:hover {
-<<<<<<< HEAD
-    background-color:coral;
+  background-color:coral;
 }
 
-.tabContainer {
-    margin: 1% 10%;
-    padding: 1%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 150px;
-    width: 80%;
+.box {
+  transition: box-shadow .3s;
 }
-=======
-  background-color: coral;
+
+.box:hover {
+  box-shadow: 0 0 15px steelblue; 
 }
->>>>>>> bbb8e7ef7126acc7d842d6f8a1187b28e55853c0
+
+#tab-button button {
+  transition: box-shadow .3s;
+}
+
+#tab-button button:hover {
+  box-shadow: 0 0 15px #F4BB4B; 
+}
+
+
