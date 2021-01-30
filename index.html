@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="photos.css">
     <link rel="stylesheet" href="tab-menu.css">
     <link rel="stylesheet" href="our-story.css">
+    <link rel="stylesheet" href="reservation.css">
     <title>Restaurant</title>
 </head>
 <body>
@@ -85,7 +86,7 @@
                 <div id ="menuCon-dessert" class="menu-Con" hidden>DESSERT</div>
             </div>
             <div id ="buttonCon-res" class="button-con" hidden>
-                <form action=""><div>
+                <form id="form" action=""><div>
                     <label for="fullname">Full Name</lable>
                         <input id="fullname" type="text" name="fullname" placeholder="">
                     </div>
@@ -102,9 +103,9 @@
         
                     <div>
                         <label for="notes">Special Notes</lable>
-                          <input id="notes" type="text" name="notes" placeholder="">
+                            <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
                       </div>
-            
+                       
                     <div>
                       <label for="seating">Seating Preference</lable>
                         <select id="seating" name="seating">
@@ -114,7 +115,7 @@
                         </select>
                     </div>
                         <div>
-                            <input id="Reserve" value="Reserve" type="submit"></input>
+                           <input id="reserve" value="Reserve Table" type="submit">     
                         </div>
                        </form>
                     </div>
@@ -141,6 +142,7 @@
 
     <script src="main.js"></script>
     <script src ="tab-menu.js"></script>
+    <script src="reservation.js"></script>
    
 </body>
 
