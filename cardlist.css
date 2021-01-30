@@ -54,22 +54,28 @@
     margin-bottom: 15px;
 }
 
-.footcontainer{
+.footercontainer{
     border-top:1px solid rgb(233, 227, 227);
-    width:80%;
+    
+    width:140%;
     height: 100px;
     margin:0 auto;
     margin-top:10px;
-    
 
 }
 
 .footerp{
     font-size: 15px;
     padding-top:10px;
+    color:#948e8e;
+    margin-top: 10px;
 }
 
 .address{
     padding-top:8px;
     line-height: 25px;
+}
+
+.address a{
+    text-decoration: none;
 }

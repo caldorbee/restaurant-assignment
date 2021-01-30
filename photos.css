@@ -1,6 +1,6 @@
 .photocontainer{
     
-    width:100%;
+    width:90%;
     height: 1200px;
     position: relative;
     /* left:995px; */
@@ -23,5 +23,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
     margin-bottom: 10px;
-    margin-left: -85px;
+    margin-left: -83px;
 }
+
+
