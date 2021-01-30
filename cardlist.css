@@ -56,8 +56,8 @@
 
 .footercontainer{
     border-top:1px solid rgb(233, 227, 227);
-    border:3px solid red;
-    width:100%;
+    
+    width:140%;
     height: 100px;
     margin:0 auto;
     margin-top:10px;
