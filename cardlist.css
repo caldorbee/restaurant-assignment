@@ -67,9 +67,12 @@
 .footerp{
     font-size: 15px;
     padding-top:10px;
+    color:#948e8e;
+    margin-top: 10px;
 }
 
 .address{
     padding-top:8px;
     line-height: 25px;
 }
+
