@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="photos.css">
     <link rel="stylesheet" href="tab-menu.css">
     <link rel="stylesheet" href="our-story.css">
+    <link rel="stylesheet" href="reservation.css">
     <title>Restaurant</title>
 </head>
 <body style="overflow-x:hidden">
@@ -85,7 +86,38 @@
                 <div id ="menuCon-dessert" class="menu-Con" hidden>DESSERT</div>
             </div>
             <div id ="buttonCon-res" class="button-con" hidden>
-                reservation
+                <form id="form" action=""><div>
+                    <label for="fullname">Full Name</lable>
+                        <input id="fullname" type="text" name="fullname" placeholder="">
+                    </div>
+            
+                    <div>
+                      <label for="guests">Number of Guests</lable>
+                        <input id="guests" type="text" name="guests" placeholder="">
+                    </div>
+            
+                    <div>
+                      <label for="date">Date</lable>
+                        <input id="date" type="text" name="date" placeholder="">
+                    </div>
+        
+                    <div>
+                        <label for="notes">Special Notes</lable>
+                            <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
+                      </div>
+                       
+                    <div>
+                      <label for="seating">Seating Preference</lable>
+                        <select id="seating" name="seating">
+                          <option value="">Choose a location</option>
+                          <option value="Indoor">Indoor</option>
+                          <option value="Outdoor">Outdoor</option>
+                        </select>
+                    </div>
+                        <div>
+                           <input id="reserve" value="Reserve Table" type="submit">     
+                        </div>
+                       </form>
             </div>
 
         </div>
@@ -155,6 +187,7 @@
 
     <script src="main.js"></script>
     <script src ="tab-menu.js"></script>
+    <script> src="reservation.js"</script>
    
 </body>
 
