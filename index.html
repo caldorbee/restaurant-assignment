@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="our-story.css">
     <title>Restaurant</title>
 </head>
-<body>
+<body style="overflow-x:hidden">
     <nav class="navContainer">
             <img class="logo" src="https://bigfishgrill.com/wp-content/uploads/2018/06/bf-rehoboth-logo.png" alt="">
             <a class="phone" href="tel:302.227.FISH">302.227.FISH</a>
@@ -53,10 +53,7 @@
                 Rehoboth Beach, Delaware, 19971 </br>
                 302-277-FISH . 302-277-FISH . <a href="https://www.google.com/maps/place/20298+Coastal+Hwy,+Rehoboth+Beach,+DE+19971/@38.710637,-75.098846,15z/data=!4m5!3m4!1s0x89b8b637adf69b7b:0xc99371e1d40cb5cd!8m2!3d38.7106372!4d-75.0988465?hl=en">Map</a> . <a href="https://www.google.com/maps/dir//20298+Coastal+Hwy,+Rehoboth+Beach,+DE+19971/@38.710637,-75.098846,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89b8b637adf69b7b:0xc99371e1d40cb5cd!2m2!1d-75.0988465!2d38.7106372?hl=en">Directions </a>
             </p>
-            
-
-        </div>
-            
+        </div>         
     </div>
 
     <div class ="tabContainer">
@@ -102,8 +99,8 @@
                 <div id ="menuCon-dinner" class="menu-Con" hidden>DINNER</div>
                 <div id ="menuCon-dessert" class="menu-Con" hidden>DESSERT</div>
             </div>
-
             <div id ="buttonCon-res" class="button-con" hidden>
+<<<<<<< HEAD
                 reservation
             </div>
 
@@ -151,9 +148,58 @@
                 <div class="foodphotos">
                     <img src="https://images.unsplash.com/photo-1590759668642-c596ae357a42?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTEzfHxzZWElMjBmb29kfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt=""width="100%"height="220px"></div>
             </div>
+=======
+                <form action=""><div>
+                    <label for="fullname">Full Name</lable>
+                        <input id="fullname" type="text" name="fullname" placeholder="">
+                    </div>
+            
+                    <div>
+                      <label for="guests">Number of Guests</lable>
+                        <input id="guests" type="text" name="guests" placeholder="">
+                    </div>
+            
+                    <div>
+                      <label for="date">Date</lable>
+                        <input id="date" type="text" name="date" placeholder="">
+                    </div>
+        
+                    <div>
+                        <label for="notes">Special Notes</lable>
+                          <input id="notes" type="text" name="notes" placeholder="">
+                      </div>
+            
+                    <div>
+                      <label for="seating">Seating Preference</lable>
+                        <select id="seating" name="seating">
+                          <option value="">Choose a location</option>
+                          <option value="Indoor">Indoor</option>
+                          <option value="Outdoor">Outdoor</option>
+                        </select>
+                    </div>
+                        <div>
+                            <input id="Reserve" value="Reserve" type="submit"></input>
+                        </div>
+                       </form>
+                    </div>
+>>>>>>> 07d8afd55ce8e7ec59e5d2130604c914eedc8eec
     </div>
 
-    <footer class="footcontainer">
+    <div class="photocontainer" id ="photoCon">
+        <header class="phototitle">Food Photos...</header>
+        <div class="foodphotos">
+            <img src="https://images.unsplash.com/photo-1580376259349-5f4b7db4c39f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8c2VhJTIwZm9vZHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt=""width="100%"height="220px"></div>
+        <div class="foodphotos">
+            <img src="https://images.unsplash.com/photo-1579712267685-42da80f60aa4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fHNlYSUyMGZvb2R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt=""width="100%"height="220px"></div>
+        <div class="foodphotos">
+            <img src="https://images.unsplash.com/photo-1598298125949-4c3eba287609?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjV8fHNlYSUyMGZvb2R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt=""width="100%"height="220px"></div>
+        <div class="foodphotos">
+            <img src="https://images.unsplash.com/photo-1565792508517-94b63bb06dac?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTB8fHNlYSUyMGZvb2R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt=""width="100%"height="220px"></div>
+        <div class="foodphotos">
+            <img src="https://images.unsplash.com/photo-1590759668642-c596ae357a42?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTEzfHxzZWElMjBmb29kfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt=""width="100%"height="220px"></div>
+    </div>
+
+    <footer class="footercontainer">
         <p class="footerp">&#169; 2020 Copyright Big Fish Restaurant Group All Rights Reserved</p>
     </footer>
 
