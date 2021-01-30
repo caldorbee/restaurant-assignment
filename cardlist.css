@@ -1,4 +1,10 @@
 
+/* textarea {	
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;	
+    width: 100%;
+    } */
 .imgContainer{
     width:80%;
     height: 330px;
@@ -15,9 +21,10 @@
     
     margin:0 140px 0 148px;
     
-    
     width: 80%;
     height:300px;
+     
+
 }
 
 #card1,#card2,#card3{
@@ -41,7 +48,7 @@
 .cardp{
     padding-top: 15px 0 10px 0;
     
-
+    
 }
 
 .cardheader{
