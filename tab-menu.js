@@ -5,10 +5,14 @@ btnTab.addEventListener('click',function(e) {
     const target = btnTarget.dataset.target
     const divToShow = document.querySelector('#'+target)
     const divElements = document.querySelectorAll('.button-con')
+    console.log(btnTarget)
+
 
 
     divElements.forEach(function(el){
         el.hidden = true
+        
+
 
     })
         divToShow.hidden = false
@@ -24,6 +28,7 @@ btnMenu.addEventListener('click',function(e){
 console.log(menuElements)
     menuElements.forEach(function(elm){
         elm.hidden = true
+        console.log(elm)
     })
         menuToShow.hidden = false
 })
@@ -36,6 +41,7 @@ const dinner = document.querySelector('#menuCon-dinner')
 const dessert = document.querySelector('#menuCon-dessert')
 
 
+
 // const dessert = document.querySelector('#desserts')
 
 fetch('https://obscure-tundra-54269.herokuapp.com/casual-dining')
@@ -45,7 +51,7 @@ fetch('https://obscure-tundra-54269.herokuapp.com/casual-dining')
 
         return ` 
         <div class= "name-price">
-            <span class ="name">${x.name}</span> <span class ="dot">..................................................................... </span> <span class ="price"> $${x.price}</span>
+            <span class ="name">${x.name}</span> <span class ="dot">................................................................................ </span> <span class ="price"> $${x.price}</span>
         </div
         <span class ="desc">${x.description}</span>  `
     })
@@ -58,7 +64,7 @@ fetch('https://obscure-tundra-54269.herokuapp.com/bar-food')
     const appetizers = data.appetizers.map(function(item){
         return `
                     <div class= "name-price">
-                        <span class ="name">${item.name}</span> <span class ="dot">..................................................................... </span> <span class ="price"> $${item.price}</span>
+                        <span class ="name">${item.name}</span> <span class ="dot">............................................................................... </span> <span class ="price"> $${item.price}</span>
                     </div>  
                         <span class ="desc">${item.description}</span>
                     
@@ -68,7 +74,7 @@ fetch('https://obscure-tundra-54269.herokuapp.com/bar-food')
         // console.log(item.name)
         return `
                  <div class= "name-price">
-                    <span class ="name">${item.name} </span> <span class ="dot">..................................................................... </span> <span class ="price"> $${item.price}</span>
+                    <span class ="name">${item.name} </span> <span class ="dot">............................................................................... </span> <span class ="price"> $${item.price}</span>
                 </div>
                 <p class="desc">${item.description}</p>  `
     })
@@ -76,7 +82,7 @@ fetch('https://obscure-tundra-54269.herokuapp.com/bar-food')
         return `
 
         <div class= "name-price">
-                <span class ="name">${item.name} </span> <span class ="dot">..................................................................... </span> <span class ="price"> $${item.price}</span>
+                <span class ="name">${item.name} </span> <span class ="dot">............................................................................... </span> <span class ="price"> $${item.price}</span>
         </div>    
                 <p class = "desc">${item.description}</p>  `
     })
@@ -86,3 +92,11 @@ fetch('https://obscure-tundra-54269.herokuapp.com/bar-food')
     lunch.innerHTML= lunchs.join('')
     dessert.innerHTML=desserts.join('')
 })
+
+
+// const menueSel = document.querySelector('#menu-select')
+// menueSel.addEventListener('click',function(e) {
+//     const menuTgt = e.target
+//     console.log(menuTgt)
+
+// })
