@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="our-story.css">
     <title>Restaurant</title>
 </head>
-<body>
+<body style="overflow-x:hidden">
     <nav class="navContainer">
             <img class="logo" src="https://bigfishgrill.com/wp-content/uploads/2018/06/bf-rehoboth-logo.png" alt="">
             <a class="phone" href="tel:302.227.FISH">302.227.FISH</a>
@@ -25,7 +25,7 @@
     </div>
     
     <div class="cardContainer">
-        <div id="card1">
+        <div class="box" id="card1">
             <header class="cardheader">Latest News</header>
             <h1 class="cardtitle"style="font-style:bold;font-size: 15px;">Lorem ipsum dolor sit amet Jun 7</h1>
             <p clasee="cardp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -38,14 +38,14 @@
                 Nulla sit amet dignissim nisi. Vestibulum sagittis metus et sem consectetur
                 bibendum. </p>
         </div>
-        <div id="card2">
+        <div class="box" id="card2">
             <header class="cardheader">Today's Special</header>
             <img src="https://images.unsplash.com/photo-1522933001375-72d29575cf05?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=8" width="100%" height="135px">
             <h1 class="cardtitle"> Lorem ipsum dolor sit amet...................................27</h1>
             <p clasee="cardp">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Nullam condimentum est diam, nec tincidunt arcu ornare eu.</p>
         </div>
-        <div id="card3">
+        <div class="box" id="card3">
             <header class="cardheader">Our Location</header>
            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.312350449999!2d-75.10103518465516!3d38.71063717959993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b8b637adf69b7b%3A0xc99371e1d40cb5cd!2s20298%20Coastal%20Hwy%2C%20Rehoboth%20Beach%2C%20DE%2019971!5e0!3m2!1sen!2sus!4v1611948554650!5m2!1sen!2sus" width="100%" height="150px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             <p class="address" style="text-align:center">
@@ -53,12 +53,24 @@
                 Rehoboth Beach, Delaware, 19971 </br>
                 302-277-FISH . 302-277-FISH . <a href="https://www.google.com/maps/place/20298+Coastal+Hwy,+Rehoboth+Beach,+DE+19971/@38.710637,-75.098846,15z/data=!4m5!3m4!1s0x89b8b637adf69b7b:0xc99371e1d40cb5cd!8m2!3d38.7106372!4d-75.0988465?hl=en">Map</a> . <a href="https://www.google.com/maps/dir//20298+Coastal+Hwy,+Rehoboth+Beach,+DE+19971/@38.710637,-75.098846,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89b8b637adf69b7b:0xc99371e1d40cb5cd!2m2!1d-75.0988465!2d38.7106372?hl=en">Directions </a>
             </p>
-            
-
-        </div>
-            
+        </div>         
     </div>
 
+    <div class ="tabContainer">
+        <div id ="tab-button">
+            <button data-target="buttonCon-sty" id = "story" class="story">Story</button>
+            <button data-target="buttonCon-men" id ="menu" class="menu">Menu</button>
+            <button data-target="buttonCon-res" id ="reservation" class="reservations">Reservation</button>
+        </div>
+        <div id ="buttonCon-sty" class="button-con">
+            Story
+        </div>
+        <div id ="buttonCon-men" class ='button-con' hidden>
+            Menu
+        </div>
+        <div id ="buttonCon-men" class ='button-con' hidden>
+            Reservation
+        </div>
     <div class="tabContainer">
         <div id ="tab-men">
             <div id ="tab-button">
@@ -87,46 +99,57 @@
                 <div id ="menuCon-dinner" class="menu-Con" hidden>DINNER</div>
                 <div id ="menuCon-dessert" class="menu-Con" hidden>DESSERT</div>
             </div>
-
             <div id ="buttonCon-res" class="button-con" hidden>
                 reservation
             </div>
+
         </div>
         <div id ="buttonCon-res" class="button-con" hidden>
             <form action="">
                 <div>
                     <label for="fullname">Full Name</lable>
-                        <input id="fullname" type="text" name="fullname" placeholder="">
+                    <input id="fullname" type="text" name="fullname" placeholder="">
+                </div>
+                <div>
+                    <label for="guests">Number of Guests</lable>
+                    <input id="guests" type="text" name="guests" placeholder="">
+                </div>
+                <div>
+                     <label for="date">Date</lable>
+                     <input id="date" type="text" name="date" placeholder="">
+                </div>
+                <div>
+                    <label for="notes">Special Notes</lable>
+                    <input id="notes" type="text" name="notes" placeholder="">
+                </div>
+                <div>
+                    <label for="seating">Seating Preference</lable>
+                    <select id="seating" name="seating">
+                        <option value="">Choose a location</option>
+                        <option value="Indoor">Indoor</option>
+                        <option value="Outdoor">Outdoor</option>
+                    </select>
+                    <div>
+                        <input id="Reserve" value="Reserve" type="submit"></input>
                     </div>
-            
-                    <div>
-                      <label for="guests">Number of Guests</lable>
-                        <input id="guests" type="text" name="guests" placeholder="">
-                    </div>
-            
-                    <div>
-                      <label for="date">Date</lable>
-                        <input id="date" type="text" name="date" placeholder="">
-                    </div>
-        
-                    <div>
-                        <label for="notes">Special Notes</lable>
-                          <input id="notes" type="text" name="notes" placeholder="">
-                      </div>
-            
-                    <div>
-                      <label for="seating">Seating Preference</lable>
-                        <select id="seating" name="seating">
-                          <option value="">Choose a location</option>
-                          <option value="Indoor">Indoor</option>
-                          <option value="Outdoor">Outdoor</option>
-                        </select>
+                </div>
+            </form>      
+            <div class="photocontainer" id ="photoCon">
+                <header class="phototitle">Food Photos...</header>
+                <div class="foodphotos">
+                    <img src="https://images.unsplash.com/photo-1580376259349-5f4b7db4c39f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8c2VhJTIwZm9vZHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt=""width="100%"height="220px"></div>
+                <div class="foodphotos">
+                    <img src="https://images.unsplash.com/photo-1579712267685-42da80f60aa4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fHNlYSUyMGZvb2R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt=""width="100%"height="220px"></div>
+                <div class="foodphotos">
+                    <img src="https://images.unsplash.com/photo-1598298125949-4c3eba287609?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjV8fHNlYSUyMGZvb2R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt=""width="100%"height="220px"></div>
+                <div class="foodphotos">
+                    <img src="https://images.unsplash.com/photo-1565792508517-94b63bb06dac?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTB8fHNlYSUyMGZvb2R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt=""width="100%"height="220px"></div>
+                <div class="foodphotos">
+                    <img src="https://images.unsplash.com/photo-1590759668642-c596ae357a42?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTEzfHxzZWElMjBmb29kfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt=""width="100%"height="220px"></div>
+            </div>
+    </div>
 
-                    <div>
-                            <input id="Reserve" value="Reserve" type="submit"></input>
-                        </div>
-
-
+<<<<<<< HEAD
                     </div>
             </form>
             
@@ -138,9 +161,23 @@
                 <img src="https://images.unsplash.com/photo-1565792508517-94b63bb06dac?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTB8fHNlYSUyMGZvb2R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt=""width="100%"height="220px">
                 <img src="https://images.unsplash.com/photo-1590759668642-c596ae357a42?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTEzfHxzZWElMjBmb29kfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt=""width="100%"height="220px">
         </div>
+=======
+    <div class="photocontainer" id ="photoCon">
+        <header class="phototitle">Food Photos...</header>
+        <div class="foodphotos">
+            <img src="https://images.unsplash.com/photo-1580376259349-5f4b7db4c39f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8c2VhJTIwZm9vZHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt=""width="100%"height="220px"></div>
+        <div class="foodphotos">
+            <img src="https://images.unsplash.com/photo-1579712267685-42da80f60aa4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fHNlYSUyMGZvb2R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt=""width="100%"height="220px"></div>
+        <div class="foodphotos">
+            <img src="https://images.unsplash.com/photo-1598298125949-4c3eba287609?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjV8fHNlYSUyMGZvb2R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt=""width="100%"height="220px"></div>
+        <div class="foodphotos">
+            <img src="https://images.unsplash.com/photo-1565792508517-94b63bb06dac?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTB8fHNlYSUyMGZvb2R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt=""width="100%"height="220px"></div>
+        <div class="foodphotos">
+            <img src="https://images.unsplash.com/photo-1590759668642-c596ae357a42?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTEzfHxzZWElMjBmb29kfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt=""width="100%"height="220px"></div>
+>>>>>>> 5b3ec18657066ae7b89556ede54827fd88c3ab76
     </div>
 
-    <footer class="footcontainer">
+    <footer class="footercontainer">
         <p class="footerp">&#169; 2020 Copyright Big Fish Restaurant Group All Rights Reserved</p>
     </footer>
 

@@ -54,5 +54,23 @@
 }
 
 #insta:hover {
-  background-color: coral;
+  background-color:coral;
 }
+
+.box {
+  transition: box-shadow .3s;
+}
+
+.box:hover {
+  box-shadow: 0 0 15px  steelblue ; 
+}
+
+#tab-button button {
+  transition: box-shadow .3s;
+}
+
+#tab-button button:hover {
+  box-shadow: 0 0 15px #F4BB4B; 
+}
+
+
