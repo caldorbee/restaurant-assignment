@@ -5,18 +5,128 @@
 
 } */
 
-.story {
+.tabContainer{
+    margin: 1% 10%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50em 20em;
+    gap: 25px;
+}
+#tab-men {
+    grid-column-start: 1;
+    width:100%;
+
+}
+#photocCon {
+    grid-column-start: 2;
+}
+
+#tab-button button:hover{
+    cursor: pointer;
+}
+#tab-button{
+    border-top: 1px solid rgb(199, 196, 196);
+
+    border-bottom: 1px solid rgb(199, 196, 196);
+
+}
+
+
+#tab-button button{
     border : none;
-    outline: none;
-    background:none;
+    outline: none; 
+    background:none; 
+    font-size:  20px;
+    padding: 10px;
+    border-bottom: 0px;
+
+    /* border-top: 1px solid rgb(199, 196, 196); */
+
+}
+
+#menu-select button {
+    border : none;
+    outline: none; 
+    background:none; 
+    font-size:  15px;
+    padding: 10px;
+    border-bottom: 0px;
+
+}
+
+/* #menu-select{
+    padding : 5px;
+} */
+/* #tab-button:{ */
+
+
+
+#menu-select button:hover {
+    /* border-top: 1px solid #d6d6d6e3; */
+
+    cursor: pointer;
 
 
 }
-/* #tab-button button:onFocus {
-    border-top: 1px solid #d6d6d6e3;
+
+#menu-select button:focus{
+    /* border-top: 1px solid #d6d6d6e3; */
+    border-bottom: 2px solid #d6d6d6e3;
+
+
+}
+
+
+.name{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.price {
+
+    position: relative;
+    right: 5px;
+}
+.description {
+    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.desc{
+
+    display:grid;
+    grid-template-columns: 40em 5em;
+}
+.name-price {
+
+    display:grid;
+    grid-template-columns: 22em auto 5em;
+
+}
+.name {
+    grid-column-start: 1;
+}
+
+.price {
+    grid-column-start: 3;
+
+}
+.dot {
+    grid-column-start: 2;
+    /* padding:10px; */
+    text-align: center;
+}
+
+#buttonCon-men{
+    width: 56%;
+
+}
+.desc{
+
+    font-size: 12px;
 
     
+}
 
 
-
-} */

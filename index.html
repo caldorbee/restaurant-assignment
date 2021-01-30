@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="cardlist.css">
     <link rel="stylesheet" href="photos.css">
+    <link rel="stylesheet" href="tab-menu.css">
+    <link rel="stylesheet" href="our-story.css">
     <title>Restaurant</title>
 </head>
 <body>
@@ -19,14 +21,14 @@
             </div>
     </nav>
     <div class="imgContainer">
-            <img class="banner" src="https://images.unsplash.com/photo-1528735000313-039ec3a473b0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80" alt=""width="100%" height="330px">
+            <img class="banner" src="https://images.unsplash.com/photo-1528735000313-039ec3a473b0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80" style="max-width:100%"alt=""width="100%" height="330px">
     </div>
     
     <div class="cardContainer">
         <div id="card1">
-            <header>Latest News</header>
-            <h1 style="font-style:bold;font-size: 15px;">Lorem ipsum dolor sit amet Jun 7</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            <header class="cardheader">Latest News</header>
+            <h1 class="cardtitle"style="font-style:bold;font-size: 15px;">Lorem ipsum dolor sit amet Jun 7</h1>
+            <p clasee="cardp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Nullam condimentum est diam, nec tincidunt arcu ornare eu. 
                 Ut a massa orci. Nullam sapien nisi, vehicula quis eleifend nec, 
                 maximus sit amet felis. Maecenas eget ipsum ut sapien lobortis 
@@ -34,17 +36,29 @@
                 Donec blandit vulputate erat, sit amet pretium massa venenatis et. 
                 Praesent at urna sem. Integer tincidunt tempor mauris sit amet rutrum. 
                 Nulla sit amet dignissim nisi. Vestibulum sagittis metus et sem consectetur
-                bibendum. Vestibulum gravida sodales mi id convallis.</p>
+                bibendum. </p>
         </div>
         <div id="card2">
-            <header>Today's Special</header>
-            <p></p>
+            <header class="cardheader">Today's Special</header>
+            <img src="https://images.unsplash.com/photo-1522933001375-72d29575cf05?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=8" width="100%" height="135px">
+            <h1 class="cardtitle"> Lorem ipsum dolor sit amet...................................27</h1>
+            <p clasee="cardp">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nullam condimentum est diam, nec tincidunt arcu ornare eu.</p>
         </div>
         <div id="card3">
-            <header>Our Location</header>
+            <header class="cardheader">Our Location</header>
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.312350449999!2d-75.10103518465516!3d38.71063717959993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b8b637adf69b7b%3A0xc99371e1d40cb5cd!2s20298%20Coastal%20Hwy%2C%20Rehoboth%20Beach%2C%20DE%2019971!5e0!3m2!1sen!2sus!4v1611948554650!5m2!1sen!2sus" width="100%" height="150px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <p class="address" style="text-align:center">
+                20298 Coastal Highway </br>
+                Rehoboth Beach, Delaware, 19971 </br>
+                302-277-FISH . 302-277-FISH . <a href="https://www.google.com/maps/place/20298+Coastal+Hwy,+Rehoboth+Beach,+DE+19971/@38.710637,-75.098846,15z/data=!4m5!3m4!1s0x89b8b637adf69b7b:0xc99371e1d40cb5cd!8m2!3d38.7106372!4d-75.0988465?hl=en">Map</a> . <a href="https://www.google.com/maps/dir//20298+Coastal+Hwy,+Rehoboth+Beach,+DE+19971/@38.710637,-75.098846,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x89b8b637adf69b7b:0xc99371e1d40cb5cd!2m2!1d-75.0988465!2d38.7106372?hl=en">Directions </a>
+            </p>
+            
+
         </div>
-            <p></p>
+            
     </div>
+<<<<<<< HEAD
     <div class ="tabContainer">
         <div id ="tab-button">
             <button data-target="buttonCon-sty" id = "story" class="story">Story</button>
@@ -56,24 +70,103 @@
         </div>
         <div id ="buttonCon-men" class ='button-con' hidden>
             menu
+=======
+
+    <div class="tabContainer">
+        <div id ="tab-men">
+            <div id ="tab-button">
+                <button data-target="buttonCon-sty" id = "story" class="story">Our Story</button>
+                <button data-target="buttonCon-men" id ="menu" class="menu">Menu</button>
+                <button data-target="buttonCon-res" id ="reservation" class="reservations">Reservation</button>
+            </div>       
+            <div id ="buttonCon-sty" class="button-con">
+                <div id="ourstory">
+                    <p>Our Story began in the year 1887. During that time, four families joined together (the Marrissa's, the Calvin's the Elena's and the Candice’s) and created what we know today as Big Fish Grill. The Marissa's harvested crabs and had many uses for them including creating tools and weapons from their hard shells. It wasn't until 1885 when their land was suffering from famine, that they began consuming crabs for survival. They quickly became master chefs of crab and later renamed their tribe the Crabalonians. The Marissa's traveled from land to land sharing their wisdom of crabs until they settled on an island called Calvinite that inhabited the Calvin's. They were already well known chef’s (a passed down tradition through many generations). Their expertise in the many ways of cooking fish was unheard of during that time. The Marissa's and the Calvin's were in competition for many years until they decided to break tradition and merge. They harvested so much seafood that it was becoming scarce; so they packed up and sailed the seas delivering their services all over the world. That is when they met the Elena's and the Candice’s, who were originally working separately but also united their families.</p><br>    
+                    <img src="https://ocracokeobserver.com/wp-content/uploads/2020/02/Shrimp-boat-sunset-2008-11-28-17.48.44-1-e1582221125941.jpg" height="300" width="100%" alt=""><br><br>
+                    <p>The Elena's were experts in shrimping and preparing meals centered around shrimp. They used shrimp as medicine to heal their people and also used them resourcefully to make clothing and shoes. They were the first ever to gather shrimp for food and be outcasted by other tribes for their practices. Similarly, the Candice’s were a tribe of women that knew everything about claims,  muscles and scallops. However, they used clams and muscles for jewelry and weapons but primarily for their source of food. They were also outcasted by surrounding tribes. The Elena's and Candice's started trading with each other before deciding to work together. During the travel's of the Marissa's and the Calvin’s, they came across the island where the Elena's and Candice's were and liked what they tasted. The Elena's and the Candice's were invited to join the Marissa's and the Calvin’s. They accepted and traveled far before settling in Delaware where the seafood was plentiful. This was the beginning of Big Fish Grill. Each family has since  passed down their right to the business for generations and now we are here, the current owners representing a unique past where our four families joined and grew as one.</p>
+        
+                </div>
+            </div>
+            <div id ="buttonCon-men" class ='button-con' hidden>
+                <div id="menu-select">
+                    <button data-target="menuCon-appetizer" id ="menu-appet">Appetizer</button>
+                    <button data-target="menuCon-lunch" id = "lunch">Lunch</button>
+                    <button data-target="menuCon-dinner" id ="dinner">Dinner</button>
+                    <button data-target="menuCon-dessert" id ="men-dessert">Dessert</button>
+                </div>
+
+                <div id ="menuCon-appetizer" class="menu-Con">APPETIZER</div>
+                <div id ="menuCon-lunch" class="menu-Con" hidden>LUNCH</div>
+                <div id ="menuCon-dinner" class="menu-Con" hidden>DINNER</div>
+                <div id ="menuCon-dessert" class="menu-Con" hidden>DESSERT</div>
+            </div>
+
+            <div id ="buttonCon-res" class="button-con" hidden>
+                reservation
+            </div>
+>>>>>>> bbb8e7ef7126acc7d842d6f8a1187b28e55853c0
         </div>
         <div id ="buttonCon-res" class="button-con" hidden>
-            reservation
+            <form action="">
+                <div>
+                    <label for="fullname">Full Name</lable>
+                        <input id="fullname" type="text" name="fullname" placeholder="">
+                    </div>
+            
+                    <div>
+                      <label for="guests">Number of Guests</lable>
+                        <input id="guests" type="text" name="guests" placeholder="">
+                    </div>
+            
+                    <div>
+                      <label for="date">Date</lable>
+                        <input id="date" type="text" name="date" placeholder="">
+                    </div>
+        
+                    <div>
+                        <label for="notes">Special Notes</lable>
+                          <input id="notes" type="text" name="notes" placeholder="">
+                      </div>
+            
+                    <div>
+                      <label for="seating">Seating Preference</lable>
+                        <select id="seating" name="seating">
+                          <option value="">Choose a location</option>
+                          <option value="Indoor">Indoor</option>
+                          <option value="Outdoor">Outdoor</option>
+                        </select>
+
+                    <div>
+                            <input id="Reserve" value="Reserve" type="submit"></input>
+                        </div>
+
+
+                    </div>
+            </form>
+            
+        <div class="photocontainer" id ="photoCon">
+            <header class="phototitle">Food Photos...</header>
+            <div class="foodphotos">
+                <img src="https://images.unsplash.com/photo-1580376259349-5f4b7db4c39f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8c2VhJTIwZm9vZHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt=""width="100%"height="220px"></div>
+            <div class="foodphotos">
+                <img src="https://images.unsplash.com/photo-1579712267685-42da80f60aa4?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fHNlYSUyMGZvb2R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt=""width="100%"height="220px"></div>
+            <div class="foodphotos">
+                <img src="https://images.unsplash.com/photo-1598298125949-4c3eba287609?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjV8fHNlYSUyMGZvb2R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt=""width="100%"height="220px"></div>
+            <div class="foodphotos">
+                <img src="https://images.unsplash.com/photo-1565792508517-94b63bb06dac?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTB8fHNlYSUyMGZvb2R8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt=""width="100%"height="220px"></div>
+            <div class="foodphotos">
+                <img src="https://images.unsplash.com/photo-1590759668642-c596ae357a42?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTEzfHxzZWElMjBmb29kfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt=""width="100%"height="220px"></div>
         </div>
-
     </div>
-    
 
-    <div class="photos">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-    </div>
-    <footer></footer>
+    <footer class="footcontainer">
+        <p class="footerp">&#169; 2020 Copyright Big Fish Restaurant Group All Rights Reserved</p>
+    </footer>
+
 
     <script src="main.js"></script>
-    <script src ="tab-menu.js"></script
+    <script src ="tab-menu.js"></script>
+   
 </body>
+
 </html>
