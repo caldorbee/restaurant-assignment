@@ -62,7 +62,7 @@
 }
 
 .box:hover {
-  box-shadow: 0 0 15px steelblue; 
+  box-shadow: 0 0 15px  steelblue ; 
 }
 
 #tab-button button {
