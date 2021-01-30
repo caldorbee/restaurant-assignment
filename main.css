@@ -14,6 +14,7 @@
   height: 150px;
   width: 80%;
   border-bottom: 2px solid grey;
+  
 }
 
 .navContainer img {
@@ -55,6 +56,30 @@
 
 #insta:hover {
   background-color:coral;
+}
+
+.nav-menu {
+  position: absolute;
+  margin-top: 7%;
+  margin-left: 65%;
+  width: 202px;
+}
+
+.nav-menu a {
+  background-color: #eee;
+  color: black; 
+  display: block; 
+  padding: 12px; 
+  text-decoration: none; 
+}
+
+.nav-menu a:hover {
+  background-color: #ccc; 
+}
+
+.nav-menu a.active {
+  background-color: #4CAF50; 
+  color: white;
 }
 
 .box {
