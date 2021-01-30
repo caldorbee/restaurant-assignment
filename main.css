@@ -47,11 +47,11 @@
 }
 
 #twitter:hover {
-  background-color: steelblue;
+  background-color: dodgerblue;
 }
 
 #fb:hover {
-  background-color: dodgerblue;
+  background-color: #35679B;
 }
 
 #insta:hover {
@@ -60,13 +60,13 @@
 
 .nav-menu {
   position: absolute;
-  margin-top: 7%;
+  margin-top: 6.5%;
   margin-left: 65%;
   width: 202px;
 }
 
 .nav-menu a {
-  background-color: #eee;
+  background-color:aliceblue;
   color: black; 
   display: block; 
   padding: 12px; 
@@ -74,12 +74,12 @@
 }
 
 .nav-menu a:hover {
-  background-color: #ccc; 
+  background-color:#8CA2C5; 
 }
 
-.nav-menu a.active {
-  background-color: #4CAF50; 
-  color: white;
+.nav-icon {
+  width: 40px;
+  background-color: none;
 }
 
 .box {
@@ -88,14 +88,6 @@
 
 .box:hover {
   box-shadow: 0 0 15px  steelblue ; 
-}
-
-#tab-button button {
-  transition: box-shadow .3s;
-}
-
-#tab-button button:hover {
-  box-shadow: 0 0 15px #F4BB4B; 
 }
 
 
