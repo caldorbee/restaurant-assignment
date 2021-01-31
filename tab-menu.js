@@ -45,11 +45,12 @@ fetch("https://obscure-tundra-54269.herokuapp.com/casual-dining")
       return ` 
         <div class= "name-price">
             <span class ="name">${x.name}</span> <span class ="dot">................................................................................ </span> <span class ="price"> $${x.price}</span>
-        </div
-        <div class ="desc-note-din">
-            <span class ="desc-din">${x.description}</span> <span id = "note-din"> ${allergy} ${favorite}
-             ${spicy} ${vegan} </span>
         </div>
+        <div class ="desc-note-din">
+            <span class ="desc-din">${x.description}</span> 
+            <span id = "note-din">${allergy} ${favorite} ${spicy} ${vegan} </span>
+        </div>
+         
         `;
     });
     dinner.innerHTML = dnr.join("");

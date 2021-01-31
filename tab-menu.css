@@ -64,6 +64,15 @@
   grid-column-start: 1;
 }
 
+.desc-din {
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri;
+  grid-column-start: 1;
+  text-overflow: ellipsis;
+  
+  /* overflow: hidden;  */
+}
+
 .name-price {
   display: grid;
   grid-template-columns: 22em auto 5em;
@@ -110,13 +119,7 @@
   overflow: hidden;
 }
 
-.desc-din {
-  font-size: 15px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri;
-  grid-column-start: 1;
-  text-overflow: ellipsis;
-  /* overflow: hidden;  */
-}
+
 #note {
   grid-column-start: 2;
   text-align: right;
@@ -124,7 +127,7 @@
 #note-din {
   grid-column-start: 2;
   text-align: right;
-  left: 120px;
+  margin-left: 60px;
 }
 
 #spicy img {
@@ -136,4 +139,13 @@
 #favorite,
 #vegan {
   color: #000000;
+}
+
+.hidenote {
+  display: none;
+}
+
+#note-din:hover + .hidenote {
+  display: block;
+  color: red;
 }
