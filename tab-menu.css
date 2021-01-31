@@ -105,13 +105,17 @@
 
 }
 
+#tab-button #story{
+    border-bottom: 3px solid #ADACAD;
+
+}
 /* .menu:focus #menu-appet {
     border-bottom: 3px solid #ADACAD;
 
 } */
-/* #menu-appet {
+ /* #menu-appet {
     border-bottom: 3px solid #ADACAD;
 
 
-} */
+}  */
 

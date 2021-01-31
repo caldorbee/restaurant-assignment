@@ -7,21 +7,21 @@ btnTab.addEventListener('click',function(e) {
     const divElements = document.querySelectorAll('.button-con')
     console.log(btnTarget)
 
-
+    if (btnTarget.style.borderBottom = '0px') {
+        btnTarget.style.borderBottom = '3px solid #ADACAD'
+    } 
 
     divElements.forEach(function(el){
         el.hidden = true
-        
-
-
     })
         divToShow.hidden = false
+
 })
 
 const btnMenu = document.querySelector('#menu-select')
 btnMenu.addEventListener('click',function(e){
     const buttonTarget = e.target
-    console.log(buttonTarget)
+    // console.log(buttonTarget)
     const menuTarget = buttonTarget.dataset.target
     const menuToShow = document.querySelector('#'+menuTarget)
     const menuElements = document.querySelectorAll('.menu-Con')
@@ -39,10 +39,6 @@ const appetizer = document.querySelector('#menuCon-appetizer')
 const lunch = document.querySelector('#menuCon-lunch')
 const dinner = document.querySelector('#menuCon-dinner')
 const dessert = document.querySelector('#menuCon-dessert')
-
-
-
-// const dessert = document.querySelector('#desserts')
 
 fetch('https://obscure-tundra-54269.herokuapp.com/casual-dining')
 .then((response)=>response.json())
@@ -94,9 +90,9 @@ fetch('https://obscure-tundra-54269.herokuapp.com/bar-food')
 })
 
 
-// const menueSel = document.querySelector('#menu-select')
-// menueSel.addEventListener('click',function(e) {
-//     const menuTgt = e.target
-//     console.log(menuTgt)
+const menueSel = document.querySelector('#menu-select')
+menueSel.addEventListener('click',function(e) {
+    const menuTgt = e.target
+    menuTgt.style.borderBottom = '3px solid #ADACAD'
 
-// })
+})
