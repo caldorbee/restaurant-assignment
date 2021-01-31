@@ -8,16 +8,13 @@ form {
   font-size: 18px;
   font-weight: bold;
   color: black;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri;
 
   /* border: 2px solid blue; */
 }
 form input {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri;
   font-size: 15px;
-
-
-
 }
 #fullname {
   height: 35px;
@@ -30,7 +27,7 @@ form input {
 #guests {
   height: 35px;
   width: 200px;
-  background-color:  #ffffff;
+  background-color: #ffffff;
   border: 1px solid gray;
   margin-bottom: 10px;
 }
@@ -38,7 +35,7 @@ form input {
 #date {
   height: 35px;
   width: 200px;
-  background-color:  #ffffff;
+  background-color: #ffffff;
   border: 1px solid gray;
   margin-bottom: 10px;
 }
@@ -46,14 +43,14 @@ form input {
 #notes {
   height: 80px;
   width: 400px;
-  background-color:  #ffffff;
+  background-color: #ffffff;
   border: 1px solid gray;
   margin-bottom: 10px;
   resize: none;
 }
 
 #seating {
-  /* background-color:  #ffffff;     */
+  background-color: #ffffff;
   border: 1px solid black;
   margin-bottom: 40px;
 }
