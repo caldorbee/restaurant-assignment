@@ -1,4 +1,5 @@
 
+
 .imgContainer{
     width:80%;
     height: 330px;
@@ -12,12 +13,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
-    margin:0 140px 0 148px;
-    
-    
+    margin:0 auto;
     width: 80%;
     height:300px;
+     
+
 }
 
 #card1,#card2,#card3{
@@ -31,18 +31,6 @@
 #card1,#card2{
    text-align: justify;
 }
-.cardtitle{
-   
-    font-weight: bold;
-    font-size:15px;
-    margin-top:10px;
-    margin-bottom:10px;
-}
-.cardp{
-    padding-top: 15px 0 10px 0;
-    
-
-}
 
 .cardheader{
     font-size: 15px;
@@ -53,10 +41,24 @@
     margin: 0 auto;
     margin-bottom: 15px;
 }
+.cardtitle{
+   
+    font-weight: bold;
+    font-size:15px;
+    margin-top:10px;
+    margin-bottom:10px;
+    
+}
+.cardp{
+    padding-top: 15px 0 10px 0;
+    font-size: 1em;
+    
+}
+
+
 
 .footercontainer{
     border-top:1px solid rgb(233, 227, 227);
-    
     width:80%;
     height: 100px;
     margin:0 auto;
