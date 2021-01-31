@@ -21,41 +21,41 @@ form input {
 }
 #fullname {
   height: 35px;
-  width: 350px;
-  background-color: honeydew;
+  width: 400px;
+  background-color: #ffffff;
   border: 1px solid gray;
   margin-bottom: 10px;
 }
 
 #guests {
   height: 35px;
-  width: 150px;
-  background-color: honeydew;
+  width: 200px;
+  background-color:  #ffffff;
   border: 1px solid gray;
   margin-bottom: 10px;
 }
 
 #date {
   height: 35px;
-  width: 220px;
-  background-color: honeydew;
+  width: 200px;
+  background-color:  #ffffff;
   border: 1px solid gray;
   margin-bottom: 10px;
 }
 
 #notes {
   height: 80px;
-  width: 350px;
-  background-color: honeydew;
+  width: 400px;
+  background-color:  #ffffff;
   border: 1px solid gray;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   resize: none;
 }
 
 #seating {
-  /* background-color: honeydew;     */
+  /* background-color:  #ffffff;     */
   border: 1px solid black;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
 #reserve {
