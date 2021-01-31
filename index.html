@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="photos.css">
     <link rel="stylesheet" href="tab-menu.css">
     <link rel="stylesheet" href="our-story.css">
+    <link rel="stylesheet" href="reservation.css">
     <title>Restaurant</title>
 </head>
 <body style="overflow-x:hidden">
@@ -24,11 +25,11 @@
             <img class="banner" src="https://images.unsplash.com/photo-1528735000313-039ec3a473b0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80" style="max-width:100%"alt=""width="100%" height="330px">
     </div>
     
-    <div class="cardContainer">
+    <div class="cardContainer"style="overflow:hidden">
         <div class="box" id="card1">
             <header class="cardheader">Latest News</header>
             <h1 class="cardtitle"style="font-style:bold;font-size: 15px;">Lorem ipsum dolor sit amet Jun 7</h1>
-            <p clasee="cardp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            <p class="cardp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Nullam condimentum est diam, nec tincidunt arcu ornare eu. 
                 Ut a massa orci. Nullam sapien nisi, vehicula quis eleifend nec, 
                 maximus sit amet felis. Maecenas eget ipsum ut sapien lobortis 
@@ -42,7 +43,7 @@
             <header class="cardheader">Today's Special</header>
             <img src="https://images.unsplash.com/photo-1522933001375-72d29575cf05?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=8" width="100%" height="135px">
             <h1 class="cardtitle"> Lorem ipsum dolor sit amet...................................27</h1>
-            <p clasee="cardp">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <p class="cardp">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Nullam condimentum est diam, nec tincidunt arcu ornare eu.</p>
         </div>
         <div class="box" id="card3">
@@ -56,21 +57,6 @@
         </div>         
     </div>
 
-    <div class ="tabContainer">
-        <div id ="tab-button">
-            <button data-target="buttonCon-sty" id = "story" class="story">Story</button>
-            <button data-target="buttonCon-men" id ="menu" class="menu">Menu</button>
-            <button data-target="buttonCon-res" id ="reservation" class="reservations">Reservation</button>
-        </div>
-        <div id ="buttonCon-sty" class="button-con">
-            Story
-        </div>
-        <div id ="buttonCon-men" class ='button-con' hidden>
-            Menu
-        </div>
-        <div id ="buttonCon-men" class ='button-con' hidden>
-            Reservation
-        </div>
     <div class="tabContainer">
         <div id ="tab-men">
             <div id ="tab-button">
@@ -88,52 +74,54 @@
             </div>
             <div id ="buttonCon-men" class ='button-con' hidden>
                 <div id="menu-select">
-                    <button data-target="menuCon-appetizer" id ="menu-appet">Appetizer</button>
-                    <button data-target="menuCon-lunch" id = "lunch">Lunch</button>
-                    <button data-target="menuCon-dinner" id ="dinner">Dinner</button>
-                    <button data-target="menuCon-dessert" id ="men-dessert">Dessert</button>
+                    <button data-target="menuCon-appetizer" id ="menu-appet">APPETIZER</button>
+                    <button data-target="menuCon-lunch" id = "lunch">LUNCH</button>
+                    <button data-target="menuCon-dinner" id ="dinner">DINNER</button>
+                    <button data-target="menuCon-dessert" id ="men-dessert">DESSERT</button>
                 </div>
-
-                <div id ="menuCon-appetizer" class="menu-Con">APPETIZER</div>
-                <div id ="menuCon-lunch" class="menu-Con" hidden>LUNCH</div>
-                <div id ="menuCon-dinner" class="menu-Con" hidden>DINNER</div>
-                <div id ="menuCon-dessert" class="menu-Con" hidden>DESSERT</div>
+                <div id = 'menu'>
+                    <div id ="menuCon-appetizer" class="menu-Con">APPETIZER</div>
+                    <div id ="menuCon-lunch" class="menu-Con" hidden>LUNCH</div>
+                    <div id ="menuCon-dinner" class="menu-Con" hidden>DINNER</div>
+                    <div id ="menuCon-dessert" class="menu-Con" hidden>DESSERT</div>
+                </div>
             </div>
             <div id ="buttonCon-res" class="button-con" hidden>
-                reservation
+                <form id="form" action=""><div>
+                    <label for="fullname">Full Name</lable>
+                        <input id="fullname" type="text" name="fullname" placeholder="">
+                    </div>
+            
+                    <div>
+                      <label for="guests">Number of Guests</lable>
+                        <input id="guests" type="number" name="guests" placeholder="">
+                    </div>
+            
+                    <div>
+                      <label for="date">Date</lable>
+                        <input id="date" type="date" name="date" placeholder="">
+                    </div>
+        
+                    <div>
+                        <label for="notes">Special Notes</lable>
+                            <textarea name="notes" id="notes" cols="30" rows="10"></textarea>
+                      </div>
+                       
+                    <div>
+                      <label for="seating">Seating Preference</lable>
+                        <select id="seating" name="seating">
+                          <option value="">Choose a location</option>
+                          <option value="Indoor">Indoor</option>
+                          <option value="Outdoor">Outdoor</option>
+                        </select>
+                    </div>
+                        <div>
+                           <button id="reserve">Reserve Table</button>
+                        </div>
+                       </form>
             </div>
 
         </div>
-        <div id ="buttonCon-res" class="button-con" hidden>
-            <form action="">
-                <div>
-                    <label for="fullname">Full Name</lable>
-                    <input id="fullname" type="text" name="fullname" placeholder="">
-                </div>
-                <div>
-                    <label for="guests">Number of Guests</lable>
-                    <input id="guests" type="text" name="guests" placeholder="">
-                </div>
-                <div>
-                     <label for="date">Date</lable>
-                     <input id="date" type="text" name="date" placeholder="">
-                </div>
-                <div>
-                    <label for="notes">Special Notes</lable>
-                    <input id="notes" type="text" name="notes" placeholder="">
-                </div>
-                <div>
-                    <label for="seating">Seating Preference</lable>
-                    <select id="seating" name="seating">
-                        <option value="">Choose a location</option>
-                        <option value="Indoor">Indoor</option>
-                        <option value="Outdoor">Outdoor</option>
-                    </select>
-                    <div>
-                        <input id="Reserve" value="Reserve" type="submit"></input>
-                    </div>
-                </div>
-            </form>      
             <div class="photocontainer" id ="photoCon">
                 <header class="phototitle">Food Photos...</header>
                 <div class="foodphotos">
@@ -148,6 +136,7 @@
                     <img src="https://images.unsplash.com/photo-1590759668642-c596ae357a42?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTEzfHxzZWElMjBmb29kfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt=""width="100%"height="220px"></div>
             </div>
     </div>
+<<<<<<< HEAD
 
 <<<<<<< HEAD
                     </div>
@@ -177,13 +166,14 @@
 >>>>>>> 5b3ec18657066ae7b89556ede54827fd88c3ab76
     </div>
 
+=======
+>>>>>>> 3a6935ac6d687ddad05c3eda9bb1b2cfd954e60c
     <footer class="footercontainer">
         <p class="footerp">&#169; 2020 Copyright Big Fish Restaurant Group All Rights Reserved</p>
     </footer>
-
-
     <script src="main.js"></script>
     <script src ="tab-menu.js"></script>
+    <script src="reservation.js"></script>
    
 </body>
 
