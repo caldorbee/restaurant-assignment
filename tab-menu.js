@@ -14,6 +14,20 @@ btnTab.addEventListener('click',function(e) {
         divToShow.hidden = false
 })
 
+<<<<<<< HEAD
+
+const menu = document.querySelector('#buttonCon-men')
+fetch('https://obscure-tundra-54269.herokuapp.com/bar-food')
+.then((resp)=> resp.json())
+.then(function (data) {
+    console.log(data.entrees)
+    const entrees = data.entrees.map(function(item){
+        return `<p> -- ENTREES --- </p>
+                <p>${item.name} ....................... ${item.price}</p>
+                    <p>${item.description}</p>  `
+    })
+    menu.innerHTML=entrees.join('')
+=======
 const btnMenu = document.querySelector('#menu-select')
 btnMenu.addEventListener('click',function(e){
     const buttonTarget = e.target
@@ -98,6 +112,7 @@ fetch('https://obscure-tundra-54269.herokuapp.com/bar-food')
     appetizer.innerHTML=appetizers.join('') 
     lunch.innerHTML= lunchs.join('')
     dessert.innerHTML=desserts.join('')
+>>>>>>> 3a6935ac6d687ddad05c3eda9bb1b2cfd954e60c
 })
 
 // const textNote = document.getElementById('.desc-note')

@@ -1,6 +1,10 @@
 .photocontainer{
+<<<<<<< HEAD
+    width:100%;
+=======
     
     width:90%;
+>>>>>>> 5b3ec18657066ae7b89556ede54827fd88c3ab76
     height: 1200px;
     position: relative;
     /* left:995px; */
