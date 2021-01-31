@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+html, body {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+
+
 .navContainer {
   display: flex;
   margin: 1% 10%;
@@ -54,5 +62,16 @@
 }
 
 #insta:hover {
-  background-color: coral;
+  background-color:coral;
 }
+
+.box {
+  transition: box-shadow .3s;
+}
+
+.box:hover {
+  box-shadow: 0 0 15px  steelblue ; 
+}
+
+
+

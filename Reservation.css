@@ -15,6 +15,23 @@ form {
   height: 35px;
   width: 300px;
   background-color: honeydew;
+  margin-top: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+
+  /* border: 2px solid blue; */
+}
+form input {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+  font-size: 15px;
+
+}
+#fullname {
+  height: 35px;
+  width: 400px;
+  background-color: #ffffff;
   border: 1px solid gray;
   margin-bottom: 10px;
 }
@@ -23,6 +40,8 @@ form {
   height: 35px;
   width: 150px;
   background-color: honeydew;
+  width: 200px;
+  background-color:  #ffffff;
   border: 1px solid gray;
   margin-bottom: 10px;
 }
@@ -31,6 +50,8 @@ form {
   height: 35px;
   width: 220px;
   background-color: honeydew;
+  width: 200px;
+  background-color:  #ffffff;
   border: 1px solid gray;
   margin-bottom: 10px;
 }
@@ -47,6 +68,17 @@ form {
   /* background-color: honeydew;     */
   border: 1px solid black;
   margin-bottom: 10px;
+  width: 400px;
+  background-color:  #ffffff;
+  border: 1px solid gray;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+#seating {
+  /* background-color:  #ffffff;     */
+  border: 1px solid black;
+  margin-bottom: 40px;
 }
 
 #reserve {
@@ -57,3 +89,10 @@ form {
   font-size: 16px;
   border-radius: 5%;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+

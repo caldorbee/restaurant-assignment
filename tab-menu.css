@@ -1,15 +1,10 @@
-/* #story{
-    height: 150px;
-    width: 150px;
-    border: 1px solid #000000;
 
-} */
 
 .tabContainer{
     margin: 1% 10%;
     width: 100%;
     display: grid;
-    grid-template-columns: 50em 20em;
+    grid-template-columns: 50em 22em;
     gap: 25px;
 }
 #tab-men {
@@ -23,6 +18,8 @@
 
 #tab-button button:hover{
     cursor: pointer;
+    box-shadow: 0 0 15px #F4BB4B; 
+
 }
 #tab-button{
     border-top: 1px solid rgb(199, 196, 196);
@@ -39,9 +36,7 @@
     font-size:  20px;
     padding: 10px;
     border-bottom: 0px;
-
-    /* border-top: 1px solid rgb(199, 196, 196); */
-
+    transition: box-shadow .3s;
 }
 
 #menu-select button {
@@ -50,31 +45,17 @@
     background:none; 
     font-size:  15px;
     padding: 10px;
-    border-bottom: 0px;
+
+
 
 }
-
-/* #menu-select{
-    padding : 5px;
-} */
-/* #tab-button:{ */
-
-
 
 #menu-select button:hover {
-    /* border-top: 1px solid #d6d6d6e3; */
-
     cursor: pointer;
-
-
-}
-
-#menu-select button:focus{
-    /* border-top: 1px solid #d6d6d6e3; */
-    border-bottom: 2px solid #d6d6d6e3;
-
+    box-shadow: 0 0 15px #F4BB4B; 
 
 }
+
 
 
 .name{
@@ -85,23 +66,26 @@
 }
 .price {
 
-    position: relative;
-    right: 5px;
+    text-align: right;
+    font-size: 18px;
 }
-.description {
-    font-size: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-}
 .desc{
 
     display:grid;
-    grid-template-columns: 40em 5em;
+    grid-template-columns: 50em 5em;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+
+
 }
+
+
 .name-price {
 
     display:grid;
     grid-template-columns: 22em auto 5em;
+    padding-top: 10px;
 
 }
 .name {
@@ -114,19 +98,33 @@
 }
 .dot {
     grid-column-start: 2;
-    /* padding:10px; */
-    text-align: center;
+    text-align:right;
 }
 
 #buttonCon-men{
-    width: 56%;
+    width: 100%;
 
 }
-.desc{
 
-    font-size: 12px;
+#menu-select{
+    border-bottom: 3px solid #ADACAD;
 
-    
+}
+#menu{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top : 10px;
+    margin-bottom : 10px; 
+
+}
+.menu-Con {
+    line-height: 2;
 }
 
+.desc-din{
+    font-size: 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+    display:grid;
+    grid-template-columns: 50em 5em;
 
+}
