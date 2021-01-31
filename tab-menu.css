@@ -1,15 +1,10 @@
-/* #story{
-    height: 150px;
-    width: 150px;
-    border: 1px solid #000000;
 
-} */
 
 .tabContainer{
     margin: 1% 10%;
     width: 100%;
     display: grid;
-    grid-template-columns: 50em 20em;
+    grid-template-columns: 50em 22em;
     gap: 25px;
 }
 #tab-men {
@@ -23,6 +18,8 @@
 
 #tab-button button:hover{
     cursor: pointer;
+    box-shadow: 0 0 15px #F4BB4B; 
+
 }
 #tab-button{
     border-top: 1px solid rgb(199, 196, 196);
@@ -39,9 +36,7 @@
     font-size:  20px;
     padding: 10px;
     border-bottom: 0px;
-
-    /* border-top: 1px solid rgb(199, 196, 196); */
-
+    transition: box-shadow .3s;
 }
 
 #menu-select button {
@@ -54,26 +49,12 @@
 
 }
 
-/* #menu-select{
-    padding : 5px;
-} */
-/* #tab-button:{ */
-
-
-
 #menu-select button:hover {
-    /* border-top: 1px solid #d6d6d6e3; */
-
     cursor: pointer;
-
-
 }
 
 #menu-select button:focus{
-    /* border-top: 1px solid #d6d6d6e3; */
     border-bottom: 2px solid #d6d6d6e3;
-
-
 }
 
 
@@ -114,7 +95,6 @@
 }
 .dot {
     grid-column-start: 2;
-    /* padding:10px; */
     text-align: center;
 }
 
@@ -123,10 +103,7 @@
 
 }
 .desc{
-
     font-size: 12px;
-
-    
 }
 
 
