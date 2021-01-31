@@ -1,109 +1,139 @@
-
-
-.tabContainer{
-    margin: 1% 10%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 50em 22em;
-    gap: 25px;
+.tabContainer {
+  margin: 1% 10%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50em 22em;
+  gap: 25px;
 }
 #tab-men {
-    grid-column-start: 1;
-    width:100%;
-
+  grid-column-start: 1;
+  width: 100%;
 }
-#photoCon{
-    grid-column-start: 2;
-}
-
-#tab-button button:hover{
-    cursor: pointer;
-    box-shadow: 0 0 15px #F4BB4B; 
-
-}
-#tab-button{
-    border-top: 1px solid rgb(199, 196, 196);
-
-    border-bottom: 1px solid rgb(199, 196, 196);
-
+#photoCon {
+  grid-column-start: 2;
 }
 
+#tab-button button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 15px #f4bb4b;
+}
+#tab-button {
+  border-top: 1px solid rgb(199, 196, 196);
 
-#tab-button button{
-    border : none;
-    outline: none; 
-    background:none; 
-    font-size:  20px;
-    padding: 10px;
-    border-bottom: 0px;
-    transition: box-shadow .3s;
+  border-bottom: 1px solid rgb(199, 196, 196);
+}
+
+#tab-button button {
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 20px;
+  padding: 10px;
+  border-bottom: 0px;
+  transition: box-shadow 0.3s;
 }
 
 #menu-select button {
-    border : none;
-    outline: none; 
-    background:none; 
-    font-size:  15px;
-    padding: 10px;
-    border-bottom: 0px;
-
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 15px;
+  padding: 10px;
 }
 
 #menu-select button:hover {
-    cursor: pointer;
+  cursor: pointer;
+  box-shadow: 0 0 15px #f4bb4b;
 }
 
-#menu-select button:focus{
-    border-bottom: 2px solid #d6d6d6e3;
-}
-
-
-.name{
-    font-size: 18px;
-    font-weight: bold;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .price {
-
-    position: relative;
-    right: 5px;
+  text-align: right;
+  font-size: 18px;
 }
-.description {
-    font-size: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+.desc {
+  /* display:grid; */
+  /* grid-template-columns: 50em 5em; */
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri;
+  grid-column-start: 1;
 }
-.desc{
 
-    display:grid;
-    grid-template-columns: 40em 5em;
-}
 .name-price {
-
-    display:grid;
-    grid-template-columns: 22em auto 5em;
-
+  display: grid;
+  grid-template-columns: 22em auto 5em;
+  padding-top: 10px;
 }
 .name {
-    grid-column-start: 1;
+  grid-column-start: 1;
 }
 
 .price {
-    grid-column-start: 3;
-
+  grid-column-start: 3;
 }
 .dot {
-    grid-column-start: 2;
-    text-align: center;
+  grid-column-start: 2;
+  text-align: right;
 }
 
-#buttonCon-men{
-    width: 56%;
-
-}
-.desc{
-    font-size: 12px;
+#buttonCon-men {
+  width: 100%;
 }
 
+#menu-select {
+  border-bottom: 3px solid #adacad;
+}
+#menu {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.menu-Con {
+  line-height: 2;
+}
 
+.desc-note {
+  display: grid;
+  grid-template-columns: 35em 15em;
+}
+
+.desc-note-din {
+  display: grid;
+  grid-template-columns: 35em 15em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.desc-din {
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri;
+  grid-column-start: 1;
+  text-overflow: ellipsis;
+  /* overflow: hidden;  */
+}
+#note {
+  grid-column-start: 2;
+  text-align: right;
+}
+#note-din {
+  grid-column-start: 2;
+  text-align: right;
+  left: 120px;
+}
+
+#spicy img {
+  height: 12px;
+  width: 12px;
+}
+
+#allergy,
+#favorite,
+#vegan {
+  color: #000000;
+}
