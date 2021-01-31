@@ -45,17 +45,17 @@
     background:none; 
     font-size:  15px;
     padding: 10px;
-    border-bottom: 0px;
+
+
 
 }
 
 #menu-select button:hover {
     cursor: pointer;
+    box-shadow: 0 0 15px #F4BB4B; 
+
 }
 
-#menu-select button:focus{
-    border-bottom: 2px solid #d6d6d6e3;
-}
 
 
 .name{
@@ -66,23 +66,26 @@
 }
 .price {
 
-    position: relative;
-    right: 5px;
+    text-align: right;
+    font-size: 18px;
 }
-.description {
-    font-size: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
-}
 .desc{
 
     display:grid;
-    grid-template-columns: 40em 5em;
+    grid-template-columns: 50em 5em;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+
+
 }
+
+
 .name-price {
 
     display:grid;
     grid-template-columns: 22em auto 5em;
+    padding-top: 10px;
 
 }
 .name {
@@ -95,15 +98,33 @@
 }
 .dot {
     grid-column-start: 2;
-    text-align: center;
+    text-align:right;
 }
 
 #buttonCon-men{
-    width: 56%;
+    width: 100%;
 
 }
-.desc{
-    font-size: 12px;
+
+#menu-select{
+    border-bottom: 3px solid #ADACAD;
+
+}
+#menu{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top : 10px;
+    margin-bottom : 10px; 
+
+}
+.menu-Con {
+    line-height: 2;
 }
 
+.desc-din{
+    font-size: 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+    display:grid;
+    grid-template-columns: 50em 5em;
 
+}
