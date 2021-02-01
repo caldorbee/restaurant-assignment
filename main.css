@@ -10,9 +10,8 @@ html, body {
   height: 100%;
 }
 
-
-
 .navContainer {
+  position: relative;
   display: flex;
   margin: 1% 10%;
   padding: 1%;
@@ -73,5 +72,68 @@ html, body {
   box-shadow: 0 0 15px  steelblue ; 
 }
 
+.phone-container {
+  position: asolute;
+  margin-top: 8.8%;
+  margin-right: 75%;
+  height: 15px;
+  width: 15px;
+}
 
+.phone-container a {
+  padding: 8px;
+  border-radius: 25px;
+}
 
+.phone-container a:hover{
+  background-color: aliceblue;
+}
+
+.dropbtn {
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.dropbtn img{
+  height: 25px;
+  width: 25px;
+}
+
+.dropdown {
+  position: absolute;
+  margin-top: 7.75%;
+  margin-left: 85%;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: aliceblue;
+  min-width: 160px;
+
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #8CA2C5;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: white;
+}
