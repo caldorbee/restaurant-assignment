@@ -99,21 +99,3 @@ fetch("https://obscure-tundra-54269.herokuapp.com/bar-food")
     dessert.innerHTML = desserts.join("");
   });
 
-// const textNote = document.getElementById('.desc-note')
-
-// textNote.addEventListener('mouseover', function(e){
-//     debugger
-//     alert ('hello')
-
-// })
-// const menueSel = document.querySelector('#menu-select')
-
-// menueSel.addEventListener('click',function(e) {
-//     const menuTgt = e.target
-//     menuTgt.style.borderBottom = '3px solid #ADACAD'
-//     if (menuTgt.id = 'menu-appet') {
-//         menuTgt
-//     }
-//     // if menuTgt.id = 'story')
-
-// })
