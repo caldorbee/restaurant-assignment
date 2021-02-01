@@ -5,10 +5,10 @@ btnTab.addEventListener("click", function (e) {
   const target = btnTarget.dataset.target;
   const divToShow = document.querySelector("#" + target);
   const divElements = document.querySelectorAll(".button-con");
-  console.log(btnTarget);
-
+  
   divElements.forEach(function (el) {
     el.hidden = true;
+
   });
   divToShow.hidden = false;
 });
@@ -31,12 +31,12 @@ const lunch = document.querySelector("#menuCon-lunch");
 const dinner = document.querySelector("#menuCon-dinner");
 const dessert = document.querySelector("#menuCon-dessert");
 const spicy =
-  '<a href="" id ="spicy"><span><img src="images/chili.png"></span></a>';
+  '<a href="" id ="spicy" title = "Spicy" class ="info"><span><img src="images/chili.png"></span></a>';
 const allergy =
-  '<a href="#" id ="allergy"> <span class="fa fa-exclamation"></span></a>';
+  '<a href="#" id ="allergy" title = "Allergy Info" class ="info"> <span class="fa fa-exclamation"></span></a>';
 const favorite =
-  '<a href="#" id ="favorite"> <span class="fa fa-star"></span></a>';
-const vegan = '<a href="#" id ="vegan"> <span class="fa fa-leaf"></span></a>';
+  '<a href="#" id ="favorite" title = "Restaurant Fave" class ="info"> <span class="fa fa-star"></span></a>';
+const vegan = '<a href="#" id ="vegan" title = "Vegan Friendly" class ="info"> <span class="fa fa-leaf"></span></a>';
 
 fetch("https://obscure-tundra-54269.herokuapp.com/casual-dining")
   .then((response) => response.json())
